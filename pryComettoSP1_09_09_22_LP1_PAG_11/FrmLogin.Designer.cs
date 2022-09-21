@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 70);
+            this.label1.Location = new System.Drawing.Point(30, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 15);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 109);
+            this.label2.Location = new System.Drawing.Point(30, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 15);
             this.label2.TabIndex = 1;
@@ -59,7 +59,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 148);
+            this.label3.Location = new System.Drawing.Point(30, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 2;
@@ -68,7 +68,7 @@
             // TxtUsuario
             // 
             this.TxtUsuario.ForeColor = System.Drawing.Color.Blue;
-            this.TxtUsuario.Location = new System.Drawing.Point(85, 67);
+            this.TxtUsuario.Location = new System.Drawing.Point(103, 22);
             this.TxtUsuario.MaxLength = 10;
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(121, 23);
@@ -78,7 +78,7 @@
             // TxtContrseña
             // 
             this.TxtContrseña.Enabled = false;
-            this.TxtContrseña.Location = new System.Drawing.Point(85, 106);
+            this.TxtContrseña.Location = new System.Drawing.Point(103, 61);
             this.TxtContrseña.MaxLength = 10;
             this.TxtContrseña.Name = "TxtContrseña";
             this.TxtContrseña.PasswordChar = '#';
@@ -89,7 +89,7 @@
             // BtnAceptar
             // 
             this.BtnAceptar.Enabled = false;
-            this.BtnAceptar.Location = new System.Drawing.Point(277, 67);
+            this.BtnAceptar.Location = new System.Drawing.Point(295, 22);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(75, 23);
             this.BtnAceptar.TabIndex = 6;
@@ -99,7 +99,7 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(277, 109);
+            this.BtnCancelar.Location = new System.Drawing.Point(295, 64);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
             this.BtnCancelar.TabIndex = 7;
@@ -116,7 +116,7 @@
             "SIST",
             "COM",
             "VTA"});
-            this.LstModulo.Location = new System.Drawing.Point(85, 145);
+            this.LstModulo.Location = new System.Drawing.Point(103, 100);
             this.LstModulo.Name = "LstModulo";
             this.LstModulo.Size = new System.Drawing.Size(121, 23);
             this.LstModulo.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 231);
+            this.ClientSize = new System.Drawing.Size(376, 147);
             this.Controls.Add(this.LstModulo);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnAceptar);
