@@ -48,16 +48,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(93, 52);
+            this.label1.Location = new System.Drawing.Point(93, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 30);
+            this.label1.Size = new System.Drawing.Size(117, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Bienvenido!";
+            this.label1.Text = "Bienvenido";
             // 
             // BtnSalir
             // 
-            this.BtnSalir.Location = new System.Drawing.Point(116, 241);
+            this.BtnSalir.Location = new System.Drawing.Point(114, 241);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 23);
             this.BtnSalir.TabIndex = 2;
@@ -73,6 +74,7 @@
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "FrmBienvenido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido - Sintepart";

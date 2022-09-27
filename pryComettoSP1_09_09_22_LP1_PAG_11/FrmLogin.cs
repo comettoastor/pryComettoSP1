@@ -24,7 +24,7 @@ namespace pryComettoSP1_09_09_22_LP1_PAG_11
         
         public void InicioFrmBienvenido()
         {
-            MessageBox.Show("Acceso Correcto!");
+            MessageBox.Show("Acceso Correcto!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
             FrmBienvenido FrmBienvenido = new FrmBienvenido();
             FrmBienvenido.ShowDialog();
@@ -33,7 +33,7 @@ namespace pryComettoSP1_09_09_22_LP1_PAG_11
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
             if (TxtUsuario.Text == "Adm" && TxtContrseña.Text == "@1a" && (LstModulo.Text == "ADM" || LstModulo.Text == "COM" || LstModulo.Text == "VTA"))
-                {
+            {
                 InicioFrmBienvenido();
             }
             else 
@@ -57,10 +57,10 @@ namespace pryComettoSP1_09_09_22_LP1_PAG_11
                         else
                         {
                             VarEntradasFallidas += 1;
-                            MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado");
+                            MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado", "Advertencia " + VarEntradasFallidas + "/2", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             if (VarEntradasFallidas == 2)
                             {
-                                MessageBox.Show("Límite de fallas alcanzado, cerrando programa");
+                                MessageBox.Show("Límite de fallas alcanzado, cerrando programa", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 Application.Exit();
                             }
                         }
