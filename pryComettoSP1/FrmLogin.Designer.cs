@@ -28,42 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
+            this.LblUsuario = new System.Windows.Forms.Label();
+            this.LblPassword = new System.Windows.Forms.Label();
+            this.LblModulo = new System.Windows.Forms.Label();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
-            this.TxtContrseña = new System.Windows.Forms.TextBox();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.LstModulo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // label1
+            // LblUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario";
+            this.LblUsuario.AutoSize = true;
+            this.LblUsuario.Location = new System.Drawing.Point(30, 25);
+            this.LblUsuario.Name = "LblUsuario";
+            this.LblUsuario.Size = new System.Drawing.Size(47, 15);
+            this.LblUsuario.TabIndex = 0;
+            this.LblUsuario.Text = "Usuario";
             // 
-            // label2
+            // LblPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Contraseña";
+            this.LblPassword.AutoSize = true;
+            this.LblPassword.Location = new System.Drawing.Point(30, 64);
+            this.LblPassword.Name = "LblPassword";
+            this.LblPassword.Size = new System.Drawing.Size(67, 15);
+            this.LblPassword.TabIndex = 1;
+            this.LblPassword.Text = "Contraseña";
             // 
-            // label3
+            // LblModulo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 103);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Módulo";
+            this.LblModulo.AutoSize = true;
+            this.LblModulo.Location = new System.Drawing.Point(30, 103);
+            this.LblModulo.Name = "LblModulo";
+            this.LblModulo.Size = new System.Drawing.Size(49, 15);
+            this.LblModulo.TabIndex = 2;
+            this.LblModulo.Text = "Módulo";
             // 
             // TxtUsuario
             // 
@@ -75,16 +76,16 @@
             this.TxtUsuario.TabIndex = 3;
             this.TxtUsuario.TextChanged += new System.EventHandler(this.TxtUsuario_TextChanged);
             // 
-            // TxtContrseña
+            // TxtPassword
             // 
-            this.TxtContrseña.Enabled = false;
-            this.TxtContrseña.Location = new System.Drawing.Point(103, 61);
-            this.TxtContrseña.MaxLength = 10;
-            this.TxtContrseña.Name = "TxtContrseña";
-            this.TxtContrseña.PasswordChar = '#';
-            this.TxtContrseña.Size = new System.Drawing.Size(121, 23);
-            this.TxtContrseña.TabIndex = 4;
-            this.TxtContrseña.TextChanged += new System.EventHandler(this.TxtContrseña_TextChanged);
+            this.TxtPassword.Enabled = false;
+            this.TxtPassword.Location = new System.Drawing.Point(103, 61);
+            this.TxtPassword.MaxLength = 10;
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '#';
+            this.TxtPassword.Size = new System.Drawing.Size(121, 23);
+            this.TxtPassword.TabIndex = 4;
+            this.TxtPassword.TextChanged += new System.EventHandler(this.TxtContrseña_TextChanged);
             // 
             // BtnAceptar
             // 
@@ -109,6 +110,7 @@
             // 
             // LstModulo
             // 
+            this.LstModulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LstModulo.Enabled = false;
             this.LstModulo.FormattingEnabled = true;
             this.LstModulo.Items.AddRange(new object[] {
@@ -130,12 +132,13 @@
             this.Controls.Add(this.LstModulo);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnAceptar);
-            this.Controls.Add(this.TxtContrseña);
+            this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtUsuario);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblModulo);
+            this.Controls.Add(this.LblPassword);
+            this.Controls.Add(this.LblUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -147,11 +150,11 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private Label LblUsuario;
+        private Label LblPassword;
+        private Label LblModulo;
         private TextBox TxtUsuario;
-        private TextBox TxtContrseña;
+        private TextBox TxtPassword;
         private Button BtnAceptar;
         private Button BtnCancelar;
         private ComboBox LstModulo;

@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBienvenido));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PicLogo = new System.Windows.Forms.PictureBox();
+            this.LblBienvenido = new System.Windows.Forms.Label();
             this.BtnSalir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // PicLogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(75, 85);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.PicLogo.Image = global::pryComettoSP1.Properties.Resources.SintepartsLogo;
+            this.PicLogo.Location = new System.Drawing.Point(75, 85);
+            this.PicLogo.Name = "PicLogo";
+            this.PicLogo.Size = new System.Drawing.Size(150, 150);
+            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PicLogo.TabIndex = 0;
+            this.PicLogo.TabStop = false;
             // 
-            // label1
+            // LblBienvenido
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(93, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bienvenido";
+            this.LblBienvenido.AutoSize = true;
+            this.LblBienvenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LblBienvenido.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblBienvenido.Location = new System.Drawing.Point(93, 50);
+            this.LblBienvenido.Name = "LblBienvenido";
+            this.LblBienvenido.Size = new System.Drawing.Size(117, 32);
+            this.LblBienvenido.TabIndex = 1;
+            this.LblBienvenido.Text = "Bienvenido";
             // 
             // BtnSalir
             // 
@@ -72,13 +72,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(301, 316);
             this.Controls.Add(this.BtnSalir);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.LblBienvenido);
+            this.Controls.Add(this.PicLogo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmBienvenido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido - Sintepart";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,8 +87,8 @@
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private Label label1;
+        private PictureBox PicLogo;
+        private Label LblBienvenido;
         private Button BtnSalir;
     }
 }
